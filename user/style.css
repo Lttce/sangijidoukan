@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* ---------- index.php（新規登録） ---------- */
+
+.adminBg{
+  background-color: #eeeeee;
+}
+.headerInner,.registerForm,.registerList{
+  margin: 0 auto;
+  width: 1200px;
+}
+header{
+  margin: 0 0 20px 0;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  background-color: #77282d;
+}
+.headerInner{
+  display: flex;
+}
+.headerLeft,.headerRight{
+  width: 600px;
+  box-sizing: border-box;
+}
+.headerLeft a,.headerRight a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.headerLeft{
+  padding: 0 0 0 20px;
+  font-size: 2rem;
+}
+.headerRight{
+  text-align: right;
+  padding: 0 20px 0 0;
+}
+.registerForm{
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+dt,dd{
+  margin: 0;
+  padding: 0;
+}
+dt{
+  margin-bottom: 5px;
+  line-height: 2em;
+  font-weight: bold;
+}
+dd{
+  margin-bottom: 20px;
+}
+.registerText{
+  padding: 5px;
+  width: 500px;
+  box-sizing: border-box;
+  height: 40px;
+}
+textarea{
+  width: 500px;
+  outline: 0;
+  resize: none;
+}
+img{
+  vertical-align: bottom;
+}
+.registerButton{
+  padding: 0;
+  width: 120px;
+  line-height: 3em;
+  background-color: #eeeeee;
+}
+.error{
+  margin: 8px 0 20px 0;
+  color: #ff0000;
+}
+
+/* ---------- index.php（登録一覧） ---------- */
+
+
+.registerList{
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url(backgroundimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/*
+body{
+  background-image: url(backgroundimage.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+}
+*/
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  margin: 0 auto;
+  padding: 15px 0 15px 20px;
+  width: 1000px;
+  list-style-type: none;
+  border-bottom: dotted 1px #cccccc;
+  box-sizing: border-box;
+  display: flex;
+}
+ul li .bookId{
+  width: 50px;
+}
+ul li .bookTitle{
+  width: 750px;
+}
+ul li .bookOperation{
+  width: 400px;
+}
+ul li .bookOperation .listButton{
+  padding: 0;
+  width: 80px;
+  height: 50px;
+  line-height: 2em;
+  background-color: #77282d;
+  color: #fff;
+}
+
+input[type="button"], input[type="submit"]{
+  border-radius: 4px;
+  font-size:30px;
+}
+
+.listButton{
+  border: none;
+}
+
+.registerButton{
+  border: none;
+  background-color: #77282d;
+  color: #fff;
+  width: 100px;
+  height: 60px;
+  font-size:;
+}
+h1, h2{
+  font-size: 400%;
+}
+
+.cont{
+  display: inline-flex;
+  font-size: 180%;
+}

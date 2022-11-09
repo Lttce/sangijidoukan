@@ -1,0 +1,445 @@
+@charset "UTF-8";
+
+/* ---------- login.php ---------- */
+
+html {
+  font-size: 70%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+.loginBg {
+  background-color: #0d5e5e;
+}
+.loginBox {
+  margin: 10% auto;
+  width: 360px;
+}
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+.loginBoxInner {
+  padding: 40px 20px;
+  width: 360px;
+  text-align: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+input {
+  outline: 0;
+}
+.loginText {
+  padding: 5px;
+  width: 20em;
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px #000 solid;
+}
+.loginButton {
+  padding: 0;
+  width: 120px;
+  height: 40px;
+  line-height: 3em;
+  background-color: #fff;
+  color: #0d5e5e;
+  border: 1px #0d5e5e solid;
+  transition: 0.3s;
+}
+.loginButton:hover {
+  padding: 0;
+  width: 120px;
+  height: 40px;
+  line-height: 3em;
+  background-color: #0d5e5e;
+  color: #fff;
+}
+/*
+html{
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+.loginBg{
+  background-color: #77282d;
+}
+.loginBox{
+  margin: 10% auto;
+  width: 360px;
+}
+h1{
+  text-align: center;
+  color: #ffffff;
+}
+.loginBoxInner{
+  padding: 40px 20px;
+  width: 360px;
+  text-align: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+input{
+  outline: 0;
+}
+.loginText{
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 320px;
+  box-sizing: border-box;
+}
+.loginButton{
+  padding: 0;
+  width: 120px;
+  line-height: 3em;
+  background-color: #eeeeee;
+}
+*/
+/* ---------- index.php（新規登録） ---------- */
+
+.adminBg {
+  background-color: #eeeeee;
+}
+.headerInner,
+.registerForm,
+.registerList {
+  margin: 0 auto;
+  width: 1200px;
+}
+header {
+  margin: 0 0 20px 0;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  background-color: #0d5e5e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.headerInner {
+  display: flex;
+}
+.headerCenter,
+.headerLeft,
+.headerRight {
+  width: 600px;
+  box-sizing: border-box;
+}
+.headerCenter a,
+.headerLeft a,
+.headerRight a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.headerCenter a {
+  margin: auto 1em;
+}
+
+.headerCenter {
+  text-align: center;
+}
+
+.headerLeft {
+  padding: 0 0 0 20px;
+  font-size: 2rem;
+}
+.headerRight {
+  text-align: right;
+  padding: 0 20px 0 0;
+}
+.registerForm {
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+}
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+dt {
+  margin-bottom: 5px;
+  line-height: 2em;
+  font-weight: bold;
+}
+dd {
+  margin-bottom: 20px;
+}
+.registerText {
+  padding: 5px;
+  width: 500px;
+  box-sizing: border-box;
+  height: 3em;
+}
+textarea {
+  width: 500px;
+  outline: 0;
+  resize: none;
+}
+img {
+  vertical-align: bottom;
+}
+.registerButton {
+  padding: 0;
+  width: 120px;
+  line-height: 3em;
+  background-color: #eeeeee;
+}
+.error {
+  margin: 8px 0 20px 0;
+  color: #ff0000;
+}
+
+/* ---------- index.php（登録一覧） ---------- */
+
+.registerList {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0 auto;
+  padding: 15px 0 15px 20px;
+  width: 1000px;
+  list-style-type: none;
+  border-bottom: dotted 1px #cccccc;
+  box-sizing: border-box;
+  display: flex;
+}
+ul li .bookId {
+  width: 50px;
+}
+ul li .bookTitle {
+  width: 300px;
+}
+ul li .bookOperation {
+  width: 400px;
+}
+ul li .bookOperation .listButton {
+  padding: 0;
+  width: 80px;
+  height: 50px;
+  line-height: 2em;
+  background-color: #0d5e5e;
+  color: #fff;
+}
+
+input[type="button"],
+input[type="submit"] {
+  border-radius: 4px;
+}
+
+.listButton {
+  border: none;
+  background-color: #0d5e5e;
+  color: #fff;
+}
+
+.registerButton {
+  border: none;
+  background-color: #0d5e5e;
+  color: #fff;
+}
+h1,
+h2 {
+  font-size: 180%;
+}
+
+.cont {
+  display: inline-flex;
+}
+
+table {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.registerFile {
+  height: 4em;
+}
+
+.registerTable td {
+  height: 3em;
+  border-bottom: #000 1px dotted;
+}
+.bookId {
+  width: 5em;
+}
+.bookTitle {
+  width: 25em;
+}
+.returnDate {
+  width: 8em;
+}
+.listButton {
+  width: 4em;
+  height: 2em;
+}
+.childName {
+  width: 10em;
+}
+
+.detailTable td {
+  width: 20em;
+  height: 2em;
+  border-bottom: #000 1px dotted;
+}
+.detailTable th {
+  width: 6em;
+  border-bottom: #000 1px dotted;
+}
+.detailTable input[type="text"] {
+  width: 25em;
+}
+
+/*
+td,
+th {
+  border-bottom: #000 1px dotted;
+}
+*/
+
+#lendTable .tablesorter-header {
+  cursor: pointer;
+  outline: none;
+}
+#lendTable .tablesorter-header-inner::after {
+  content: "▼";
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.lendRegister td {
+  width: 20em;
+  height: 2em;
+}
+.lendRegister th {
+  width: 5em;
+}
+.lendRegister input[type="text"] {
+  width: 25em;
+}
+
+.childTable td {
+  height: 3em;
+}
+.childTable .id {
+  width: 4em;
+}
+.childTable .title {
+  width: 20em;
+}
+.childTable .name {
+  width: 6em;
+}
+.childTable .date {
+  width: 8em;
+}
+.childTable .returnButton {
+  width: 4em;
+  height: 2em;
+  border: none;
+  background-color: #0d5e5e;
+  color: #fff;
+}
+
+.searchHeader {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.searchHeader .h2Title {
+  margin: 0;
+}
+.searchHeader .searchWindow {
+  align-self: center;
+  position: absolute;
+  right: 0;
+}
+
+.childCont {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.childDetail td,
+.dateDetail td,
+.bookDetail td {
+  height: 2em;
+  border-bottom: #000 1px dotted;
+}
+
+.childDetail th {
+  border-bottom: #000 1px dotted;
+  width: 6em;
+}
+.dateDetail th {
+  border-bottom: #000 1px dotted;
+  width: 4em;
+}
+.bookDetail th {
+  border-bottom: #000 1px dotted;
+}
+
+.bookDetail .title {
+  width: 15em;
+}
+.bookDetail td {
+  border: none;
+  border-bottom: #000 1px dotted;
+}
+
+.loginTable th {
+  width: 2em;
+}
+.material-icons {
+  width: 1em;
+  height: 2em;
+  border: none;
+  background-color: #fff;
+  color: #000;
+}
+
+.childLink {
+  color: #083838;
+}
+
+.searchBox {
+  height: 1.4em;
+}
+
+.registerForm tr {
+  border-bottom: #000 1px dotted;
+}
+
+.bookRegister th {
+  border-bottom: #000 1px dotted;
+}
+
+.bonsai {
+  display: flex;
+  justify-content: center;
+}
