@@ -13,7 +13,7 @@
 - XAMPP v3.2.4
   - Apache 2.4.46
   - PHP 8.0.3
-  - Mysql v15.1
+  - Mysql
 
 ## 機能
 
