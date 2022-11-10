@@ -11,15 +11,16 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- データベース: `sangijidokandb`
+-- データベース: `sangijidoukandb`
 --
+
+use sangijidoukandb;
 
 -- --------------------------------------------------------
 
@@ -63,8 +64,8 @@ CREATE TABLE `books` (
 -- テーブルのデータのダンプ `books`
 --
 
-INSERT INTO `books` (`title`, `author`, `publisher`, `issue`, `page`, `age`, `description`, `cover`, `pdf`) VALUES
-('ボクは走りたい', '静岡太郎', 'みらい情報出版', '2019/05/05', 18, '6〜8歳', 'ペットの大切さを描いたお話です。\r\nペットも大事な家族です。', 'bokuhahashiritai.png', 'bokuhahashiritai.pdf');
+INSERT INTO `books` (`id`, `title`, `author`, `publisher`, `issue`, `page`, `age`, `description`, `cover`, `pdf`) VALUES
+(1, 'ボクは走りたい', '静岡太郎', 'みらい情報出版', '2019/05/05', 18, '6〜8歳', 'ペットの大切さを描いたお話です。\r\nペットも大事な家族です。', 'bokuhahashiritai.png', 'bokuhahashiritai.pdf');
 
 -- --------------------------------------------------------
 
@@ -87,9 +88,8 @@ CREATE TABLE `lending` (
 -- テーブルのデータのダンプ `lending`
 --
 
-INSERT INTO `lending` (`date`, `returndate`, `number`, `title`, `name`, `address`, `birthday`) VALUES
-('2021/06/14', '2021/06/21', 0, 'よく分かる基本情報技術者試験', '渡辺直也', '長崎県旗夢市宇佐美区和良比3400-43', '1980/03/05'),
-('2021/06/14', '2021/06/21', 0, '難しくない応用情報技術者試験', '渡辺直也', '長崎県旗夢市宇佐美区和良比3400-43', '1980/03/05');
+INSERT INTO `lending` (`id`, `date`, `returndate`, `number`, `title`, `name`, `address`, `birthday`) VALUES
+(1, '2021/06/14', '2021/06/21', 1, 'ボクは走りたい', '渡辺直也', '長崎県旗夢市宇佐美区和良比3400-43', '1980/03/05');
 
 --
 -- ダンプしたテーブルのインデックス
