@@ -33,6 +33,9 @@ docker compose up
 
 ```
 http://127.0.0.1/admin
+
+# ユーザID = admin 
+# パスワード = sangijidoukan
 ```
 
 利用者側
